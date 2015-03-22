@@ -1,0 +1,24 @@
+{
+  "layout": {
+      "title": false,
+      "customJS" : [],
+      "widgets" : [
+          {"row" : 1, "col" : 1, "width" : 3, "height" : 4, "widget" : "jenkins-builds", "job" : "jenkins-builds-job", "config": "jenkins-builds"},
+          {"row" : 1, "col" : 3, "width" : 2, "height" : 4, "widget" : "helpdesk", "job" : "helpdesk-job", "config": "helpdesk"}
+      ]
+  },
+
+   "config" : {
+     "jenkins-builds": {
+            "serverUrl": "https://builds.apache.org/",
+            "interval": 60000,
+            "jobs": ["AuroraBot", "Apache Jackrabbit Oak matrix", "Hadoop-HDFS-7285-nightly", "HBase-TRUNK-jacoco", "Hadoop-common-trunk-Java8"],
+            "lang": "en"
+        },
+      "helpdesk": {
+            "cvsResource": "https://raw.githubusercontent.com/dgrundel/woo-product-importer/master/woo-importer-example.csv",
+            "interval": 60000,
+            "lang": "en"
+        }
+    }
+}

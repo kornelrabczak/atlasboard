@@ -1,0 +1,52 @@
+.content {
+	width: 100%;
+}
+
+.build {
+	margin: 0 0 0.5em 0;
+	width: 100%;
+	font-size: 2.5em;
+	padding: 0 0.5em 0 0.5em;
+	width: 100%;
+	border-radius: 5px;
+	line-height: 1.4em;
+	font-weight: bold;
+}
+
+.build-unstable {
+	background-color: #F39C12;
+}
+
+.build-aborted {
+    background-color: #F39C12;
+}
+
+.build-failure {
+	background-color: #F22613;
+}
+
+.build-success {
+	background-color: #00B16A;
+}
+
+.build-inprogress {
+	background: repeating-linear-gradient(
+	    -55deg,
+	    #606dbc,
+	    #606dbc 10px,
+	    #465298 10px,
+	    #465298 20px
+  );
+}
+
+.build-info {
+	font-weight: normal;
+	font-size: 0.6em;
+	line-height: 1.2em;
+}
+
+.build-time {
+	font-weight: normal;
+	font-size: 0.7em;
+	float: right;
+}
