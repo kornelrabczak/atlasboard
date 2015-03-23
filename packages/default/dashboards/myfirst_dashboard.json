@@ -16,7 +16,7 @@
             "lang": "en"
         },
       "helpdesk": {
-            "cvsResource": "https://raw.githubusercontent.com/dgrundel/woo-product-importer/master/woo-importer-example.csv",
+            "cvsResource": "https://raw.githubusercontent.com/nikom1337/atlasboard/3dda9775ac8b7541688c30d9fcc9073abec1a747/examples/helpdesk.csv",
             "interval": 60000,
             "lang": "en"
         }

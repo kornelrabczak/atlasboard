@@ -1,6 +1,29 @@
 .content {
-    font-size: 35px;
-    color: #454545;
-    font-weight: bold;
-    text-align: center;
+	width: 100%;
+}
+
+.helpdesk {
+	margin: 0 0 0.5em 0;
+	width: 100%;
+	font-size: 2em;
+	padding: 0 0.5em 0 0.5em;
+	width: 100%;
+	border-radius: 5px;
+	line-height: 1.4em;
+	font-weight: bold;
+	padding-bottom: 4px;
+}
+
+.helpdesk-error {
+	background-color: #F39C12;
+}
+
+.helpdesk-failure {
+	background-color: #F22613;
+}
+
+.helpdesk-info {
+	font-weight: normal;
+	font-size: 0.6em;
+	line-height: 1.2em;
 }
