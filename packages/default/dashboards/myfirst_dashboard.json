@@ -3,9 +3,9 @@
       "title": false,
       "customJS" : [],
       "widgets" : [
-          {"row" : 1, "col" : 1, "width" : 3, "height" : 4, "widget" : "jenkins-builds", "job" : "jenkins-builds-job", "config": "jenkins-builds"},
-          {"row" : 1, "col" : 3, "width" : 2, "height" : 4, "widget" : "helpdesk", "job" : "helpdesk-job", "config": "helpdesk"}
-      ]
+          {"row" : 1, "col" : 1, "width" : 6, "height" : 1, "widget" : "jenkins-builds", "job" : "jenkins-builds-job", "config": "jenkins-builds"},
+          {"row" : 2, "col" : 1, "width" : 6, "height" : 1, "widget" : "helpdesk", "job" : "helpdesk-job", "config": "helpdesk"},
+          {"row" : 3, "col" : 1, "width" : 6, "height" : 1, "widget" : "sprinthealth", "job" : "sprinthealth", "config": "sprinthealth"} ]
   },
 
    "config" : {
@@ -15,10 +15,17 @@
             "jobs": ["AuroraBot", "Apache Jackrabbit Oak matrix", "Hadoop-HDFS-7285-nightly", "HBase-TRUNK-jacoco", "Hadoop-common-trunk-Java8"],
             "lang": "en"
         },
-      "helpdesk": {
+     "helpdesk": {
             "cvsResource": "https://raw.githubusercontent.com/nikom1337/atlasboard/3dda9775ac8b7541688c30d9fcc9073abec1a747/examples/helpdesk.csv",
             "interval": 60000,
             "lang": "en"
-        }
+        },
+     "sprinthealth" : {
+        "credentials": "jiraAuth",
+        "jiraServer": "https://jira-server-address",
+        "rapidViewId": 163,
+        "widgetTitle": "Sprint Health",
+        "compactDisplay": true
+     }
     }
 }
