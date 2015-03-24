@@ -1,5 +1,6 @@
 {
   "live-logging" : {
-    "enabled":false
-  }
+    "enabled": true
+  },
+  "authentication-file-path": "/tmp/atlasboard-credentials.json"
 }

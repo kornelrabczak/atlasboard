@@ -42,7 +42,8 @@ module.exports = function(config, dependencies, job_callback) {
     var options = {
         headers: {
             'Authorization': 'Basic ' + new Buffer(config.globalAuth[credentials].username + ':' + config.globalAuth[credentials].password).toString('base64')
-        }
+        },
+        rejectUnauthorized: false
     };
     var includeSprintRegex = config.includeSprintPattern ? new RegExp(config.includeSprintPattern) : false;
 
